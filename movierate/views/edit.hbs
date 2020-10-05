@@ -1,0 +1,50 @@
+{{!-- <h1 class="title">Edit Your twitter</h1>
+
+
+{{#if (isNotEmpty msg)}}
+<div class="alert alert-{{{msg.type}}} alert-dismissible fade show" role="alert">
+  {{{msg.msg}}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/if}} --}}
+{{!-- 
+<div class="jumbotron">
+  <div class="container">
+    <form action="/tws/edit/{{tw._id}}" method="post">
+      <div class="form-group">
+        <label for="updateTw">update un twitt</label>
+        <h1>{{{msg._id}}}</h1>
+        <textarea class="form-control" name="message" id="updateTw" rows="3"></textarea>
+      </div>
+    </form>
+    <button class="btn btn-success btn-xs">edit</button>
+    </div>
+</div> --}}
+{{!-- <div class="col-12">
+    <h1 class="title">Twitt {{tw._id}}</h1>
+    <form action="/tws/update/{{tw._id}}" method="post">
+        <div class="form-group">
+            <textarea class="form-control" name="message" id="addTw" rows="3">{{{tw.message}}}</textarea>
+        </div>
+
+        <div align="right">
+            <button class="btn btn-sm btn-primary">Save</button>
+            <a href="/tws" class="btn btn-sm btn-secondary">Return</a>
+        </div>
+    </form>
+</div> --}} 
+<div class="col-12">
+    <h1 class="title">Twitt {{tw._id}}</h1>
+    <form action="/tws/update/{{tw._id}}" method="post">
+        <div class="form-group">
+            <textarea class="form-control" name="message" id="addTw" rows="3">{{{tw.message}}}</textarea>
+        </div>
+
+        <div align="right">
+            <button class="btn btn-sm btn-primary">Save</button>
+            <a href="/tws" class="btn btn-sm btn-secondary">Return</a>
+        </div>
+    </form>
+</div>
