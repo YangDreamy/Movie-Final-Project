@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4" lang="en">
+    <head>
+        <title>Movies</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    
+    
+    <body>
+    	<table>
+    		<thead>
+    			<tr>
+    				<th>Movie Name</th>
+    				<th>Release Date</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr th:each="movie : ${moviesList}">
+    				<td><span th:text="${movie.title}">Movie_Title</span></td>
+    				<td><span th:text="${movie.releaseDate}">Movie_ReleaseDate</span></td>
+    			</tr>
+    		</tbody>
+    		
+    	
+    	</table>
+    </body>
+</html>
