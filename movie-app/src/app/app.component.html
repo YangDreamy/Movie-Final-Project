@@ -1,0 +1,75 @@
+
+<p> WELCOME TO MOVIE WEBSITE</p>
+<!-- <app-admin></app-admin>
+<app-movie></app-movie> -->
+
+    <div class="left">
+       
+        <div class="panel-group" id="panelContainer" >
+            <br>
+            <div class="panel panel-default">
+                <!-- data-toggle="collapse" -->
+                <div id="header1" class="panel-heading"  data-target="#sub1" >
+                    <i class="glyphicon glyphicon-list-alt"><a [routerLink]="['/movie']">Movies</a></i>
+                        
+                         <!-- <span class="glyphicon glyphicon-triangle-right pull-right">
+                         </span>  -->
+                </div>
+             </div>
+             <br>
+            <div class="panel panel-default">
+                <div id="header2" class="panel-heading" data-target="#sub2" data-parent="#panelContainer">
+                    <i class="glyphicon glyphicon-leaf"> <a [routerLink]="['/admin']">Admin</a></i>
+                       
+                            <!-- <span class="glyphicon glyphicon-triangle-right pull-right"></span> -->
+                </div>
+            </div>
+            <br>
+        <!-- <div class="panel panel-default"> -->
+        <div class="panel panel-default">
+            <div id="header3" class="panel-heading" data-target="#sub3" data-parent="#panelContainer">
+                <i class="glyphicon glyphicon-leaf"> <a [routerLink]="['/user']">Users</a></i>
+                   
+                        <!-- <span class="glyphicon glyphicon-triangle-right pull-right"></span> -->
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <div id="header4" class="panel-heading"  data-target="#sub4" data-parent="#panelContainer">
+                <i class="glyphicon glyphicon-leaf"><a [routerLink]="['/seenmovie']">SeenMvoie</a></i>
+                    
+                        <!-- <span class="glyphicon glyphicon-triangle-right pull-right"></span> -->
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <div id="header5" class="panel-heading"  data-target="#sub5" data-parent="#panelContainer">
+                <i class="glyphicon glyphicon-leaf"><a [routerLink]="['/welcomePage']">WelcomePage</a></i>
+                    
+                        <!-- <span class="glyphicon glyphicon-triangle-right pull-right"></span> -->
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <div id="header6" class="panel-heading"  data-target="#sub6" data-parent="#panelContainer">
+                <i class="glyphicon glyphicon-leaf"><a [routerLink]="['/countPage']">CountPage</a></i>
+                    
+                        <!-- <span class="glyphicon glyphicon-triangle-right pull-right"></span> -->
+            </div>
+        </div>
+        <br>
+        <div class="panel panel-default">
+            <div id="header7" class="panel-heading"  data-target="#sub7" data-parent="#panelContainer">
+                <i class="glyphicon glyphicon-leaf"><a [routerLink]="['/Review']">Review&Rate</a></i>
+                    
+                        <!-- <span class="glyphicon glyphicon-triangle-right pull-right"></span> -->
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="right"><router-outlet></router-outlet></div>
+
+
+
+
+<!-- <a [routerLink]="['/admin']">Admin Page</a> -->
